@@ -9,7 +9,7 @@ import {
 
 const MuiRadio = () => {
   return (
-    <Box width="250px" sx={{ mx: "auto" }} textAlign="center">
+    <Box sx={{ mx: "auto" }} textAlign="center">
       <FormControl>
         <FormLabel id="job-experience-group-label">
           Years of experience

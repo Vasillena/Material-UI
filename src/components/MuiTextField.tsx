@@ -2,7 +2,7 @@ import { Stack, TextField, InputAdornment } from "@mui/material";
 
 const MuiTextField = () => {
   return (
-    <Stack spacing={4}>
+    <Stack spacing={4} sx={{ mx: "auto" }}>
       <Stack
         direction="row"
         spacing={2}
