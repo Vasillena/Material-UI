@@ -2,7 +2,7 @@ import { Stack, Typography } from "@mui/material";
 
 const MuiTypography = () => {
   return (
-    <Stack spacing={2}>
+    <Stack spacing={2} textAlign="center">
       <Typography variant="h1">h1 Heading</Typography>
       <Typography variant="h2">h2 Heading</Typography>
       <Typography variant="h3">h3 Heading</Typography>
