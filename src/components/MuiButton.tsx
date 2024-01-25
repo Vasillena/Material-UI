@@ -1,4 +1,4 @@
-import { Stack, Button, IconButton } from "@mui/material";
+import { Stack, Button, IconButton, ButtonGroup } from "@mui/material";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 
 const MuiButton = () => {
@@ -51,6 +51,14 @@ const MuiButton = () => {
         >
           Like
         </Button>
+      </Stack>
+
+      <Stack direction="row" justifyContent="center">
+        <ButtonGroup variant="contained" aria-label="alignment button group">
+          <Button>Left</Button>
+          <Button>Center</Button>
+          <Button>Right</Button>
+        </ButtonGroup>
       </Stack>
     </Stack>
   );
