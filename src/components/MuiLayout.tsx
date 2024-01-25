@@ -1,24 +1,32 @@
-import { Box } from "@mui/material";
+import { Box, Stack } from "@mui/material";
 
 const MuiLayout = () => {
   return (
-    <Box
+    <Stack
       sx={{
         mx: "auto",
-        backgroundColor: "primary.main",
-        color: "white",
-        height: "100px",
-        width: "100px",
-        padding: "16px",
-        "&:hover": {
-          backgroundColor: "primary.light",
-          cursor: "pointer",
-        },
+        border: "1px solid",
+        width: "300px",
       }}
-      textAlign="center"
     >
-      Test
-    </Box>
+      <Box
+        sx={{
+          mx: "auto",
+          backgroundColor: "primary.main",
+          color: "white",
+          height: "100px",
+          width: "100px",
+          padding: "16px",
+          "&:hover": {
+            backgroundColor: "primary.light",
+            cursor: "pointer",
+          },
+        }}
+        textAlign="center"
+      >
+        Test
+      </Box>
+    </Stack>
   );
 };
 
