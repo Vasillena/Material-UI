@@ -1,4 +1,11 @@
-import { Stack, Button, IconButton, ButtonGroup } from "@mui/material";
+import {
+  Stack,
+  Button,
+  IconButton,
+  ButtonGroup,
+  ToggleButton,
+  ToggleButtonGroup,
+} from "@mui/material";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 
 const MuiButton = () => {
@@ -59,6 +66,20 @@ const MuiButton = () => {
           <Button>Center</Button>
           <Button>Right</Button>
         </ButtonGroup>
+      </Stack>
+
+      <Stack direction="row" justifyContent="center">
+        <ToggleButtonGroup aria-label="text formatting">
+          <ToggleButton value="bold" aria-label="bold">
+            B
+          </ToggleButton>
+          <ToggleButton value="italic" aria-label="italic">
+            I
+          </ToggleButton>
+          <ToggleButton value="underlined" aria-label="underlined">
+            U
+          </ToggleButton>
+        </ToggleButtonGroup>
       </Stack>
     </Stack>
   );
