@@ -1,8 +1,8 @@
-import { Box, Stack, Grid } from "@mui/material";
+import { Box, Stack, Grid, Paper } from "@mui/material";
 
 const MuiLayout = () => {
   return (
-    <>
+    <Paper sx={{ padding: "32px" }}>
       <Stack
         sx={{
           mx: "auto",
@@ -50,7 +50,7 @@ const MuiLayout = () => {
           </Box>
         </Grid>
       </Grid>
-    </>
+    </Paper>
   );
 };
 
