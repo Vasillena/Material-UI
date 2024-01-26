@@ -13,6 +13,7 @@ import MuiLayout from "./components/MuiLayout";
 import MuiCard from "./components/MuiCard";
 import MuiAccordion from "./components/MuiAccordion";
 import MuiImageList from "./components/MuiImageList";
+import MuiNavbar from "./components/MuiNavbar";
 
 function App() {
   return (
@@ -66,6 +67,10 @@ function App() {
       <Divider variant="middle" />
       <br />
       <MuiImageList />
+      <br />
+      <Divider variant="middle" />
+      <br />
+      <MuiNavbar />
       <br />
       <Divider variant="middle" />
       <br />

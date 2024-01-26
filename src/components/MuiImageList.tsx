@@ -183,7 +183,14 @@ const MuiImageList = () => {
           </ImageListItem>
         ))}
       </ImageList>
-      <Box sx={{ width: 500, height: 750, overflowY: "scoll" }}>
+      <Box
+        sx={{
+          width: 500,
+          height: 750,
+          overflowY: "scoll",
+          marginBottom: "50px",
+        }}
+      >
         <ImageList variant="masonry" cols={3} gap={8}>
           {itemData3.map((item) => (
             <ImageListItem key={item.img}>
