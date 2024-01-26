@@ -10,6 +10,7 @@ import MuiSwitch from "./components/MuiSwitch";
 import MuiRating from "./components/MuiRating";
 import MuiAutocomplete from "./components/MuiAutocomplete";
 import MuiLayout from "./components/MuiLayout";
+import MuiCard from "./components/MuiCard";
 
 function App() {
   return (
@@ -51,6 +52,10 @@ function App() {
       <Divider variant="middle" />
       <br />
       <MuiLayout />
+      <br />
+      <Divider variant="middle" />
+      <br />
+      <MuiCard />
       <br />
       <Divider variant="middle" />
       <br />
