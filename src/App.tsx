@@ -16,6 +16,7 @@ import MuiImageList from "./components/MuiImageList";
 import MuiNavbar from "./components/MuiNavbar";
 import MuiLink from "./components/MuiLink";
 import MuiBreadcrumbs from "./components/MuiBreadcrumbs";
+import MuiDrawer from "./components/MuiDrawer";
 
 function App() {
   return (
@@ -81,6 +82,10 @@ function App() {
       <Divider variant="middle" />
       <br />
       <MuiBreadcrumbs />
+      <br />
+      <Divider variant="middle" />
+      <br />
+      <MuiDrawer />
       <br />
       <Divider variant="middle" />
       <br />
