@@ -12,7 +12,7 @@ const MuiSpeedDial = () => {
     >
       <SpeedDialAction icon={<CopyIcon />} tooltipTitle="Copy" tooltipOpen />
       <SpeedDialAction icon={<PrintIcon />} tooltipTitle="Print" tooltipOpen />
-      <SpeedDialAction icon={<ShareIcon />} tooltipTitle="Share" tooltipOpen />
+      <SpeedDialAction icon={<ShareIcon />} tooltipTitle="Share" />
     </SpeedDial>
   );
 };

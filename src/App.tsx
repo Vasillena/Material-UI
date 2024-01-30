@@ -18,6 +18,7 @@ import MuiLink from "./components/MuiLink";
 import MuiBreadcrumbs from "./components/MuiBreadcrumbs";
 import MuiDrawer from "./components/MuiDrawer";
 import MuiSpeedDial from "./components/MuiSpeedDial";
+import MuiBottomNavigation from "./components/MuiBottomNavigation";
 
 function App() {
   return (
@@ -91,6 +92,10 @@ function App() {
       <Divider variant="middle" />
       <br />
       <MuiSpeedDial />
+      <br />
+      <Divider variant="middle" />
+      <br />
+      <MuiBottomNavigation />
       <br />
       <Divider variant="middle" />
       <br />
