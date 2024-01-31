@@ -21,6 +21,7 @@ import MuiSpeedDial from "./components/MuiSpeedDial";
 import MuiBottomNavigation from "./components/MuiBottomNavigation";
 import MuiAvatar from "./components/MuiAvatar";
 import MuiBadge from "./components/MuiBadge";
+import MuiList from "./components/MuiList";
 
 function App() {
   return (
@@ -106,6 +107,10 @@ function App() {
       <Divider variant="middle" />
       <br />
       <MuiBadge />
+      <br />
+      <Divider variant="middle" />
+      <br />
+      <MuiList />
       <br />
       <Divider variant="middle" />
       <br />
