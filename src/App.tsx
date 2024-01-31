@@ -26,6 +26,7 @@ import MuiChip from "./components/MuiChip";
 import MuiTooltip from "./components/MuiTooltip";
 import MuiTable from "./components/MuiTable";
 import MuiAlert from "./components/MuiAlert";
+import MuiSnackbar from "./components/MuiSnackbar";
 
 function App() {
   return (
@@ -131,6 +132,10 @@ function App() {
       <Divider variant="middle" />
       <br />
       <MuiAlert />
+      <br />
+      <Divider variant="middle" />
+      <br />
+      <MuiSnackbar />
       <br />
       <Divider variant="middle" />
       <br />
