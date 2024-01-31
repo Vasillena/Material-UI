@@ -22,6 +22,7 @@ import MuiBottomNavigation from "./components/MuiBottomNavigation";
 import MuiAvatar from "./components/MuiAvatar";
 import MuiBadge from "./components/MuiBadge";
 import MuiList from "./components/MuiList";
+import MuiChip from "./components/MuiChip";
 
 function App() {
   return (
@@ -111,6 +112,10 @@ function App() {
       <Divider variant="middle" />
       <br />
       <MuiList />
+      <br />
+      <Divider variant="middle" />
+      <br />
+      <MuiChip />
       <br />
       <Divider variant="middle" />
       <br />
