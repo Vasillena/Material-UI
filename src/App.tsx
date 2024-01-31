@@ -30,6 +30,7 @@ import MuiSnackbar from "./components/MuiSnackbar";
 import MuiDialog from "./components/MuiDialog";
 import MuiProgress from "./components/MuiProgress";
 import MuiSkeleton from "./components/MuiSkeleton";
+import MuiLoadngButton from "./components/MuiLoadngButton";
 
 function App() {
   return (
@@ -151,6 +152,10 @@ function App() {
       <Divider variant="middle" />
       <br />
       <MuiSkeleton />
+      <br />
+      <Divider variant="middle" />
+      <br />
+      <MuiLoadngButton />
       <br />
       <Divider variant="middle" />
       <br />
