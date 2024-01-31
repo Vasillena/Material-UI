@@ -1,5 +1,7 @@
 import "./App.css";
 import { Box, Divider } from "@mui/material";
+// import { LocalizationProvider } from "@mui/x-date-pickers";
+// import AdapterDateFns from "@mui/x-date-pickers";
 import MuiButton from "./components/MuiButton";
 import MuiTypography from "./components/MuiTypography";
 import MuiTextField from "./components/MuiTextField";
@@ -31,9 +33,13 @@ import MuiDialog from "./components/MuiDialog";
 import MuiProgress from "./components/MuiProgress";
 import MuiSkeleton from "./components/MuiSkeleton";
 import MuiLoadngButton from "./components/MuiLoadngButton";
+import MuiTabs from "./components/MuiTabs";
+// import MuiDateAndTimePicker from "./components/MuiDateAndTimePicker";
+// import MuiDateRangePicker from "./components/MuiDateRangePicker";
 
 function App() {
   return (
+    // <LocalizationProvider dateAdapter={AdapterDateFns}>
     <Box style={{ margin: "0 auto" }}>
       <MuiTypography />
       <br />
@@ -159,7 +165,20 @@ function App() {
       <br />
       <Divider variant="middle" />
       <br />
+      {/* <MuiDateAndTimePicker />
+        <br />
+        <Divider variant="middle" />
+        <br /> */}
+      {/* <MuiDateRangePicker />
+      <br />
+      <Divider variant="middle" />
+      <br /> */}
+      <MuiTabs />
+      <br />
+      <Divider variant="middle" />
+      <br />
     </Box>
+    // </LocalizationProvider>
   );
 }
 
