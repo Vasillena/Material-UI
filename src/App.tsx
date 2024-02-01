@@ -36,6 +36,7 @@ import MuiLoadngButton from "./components/MuiLoadngButton";
 import MuiTabs from "./components/MuiTabs";
 import MuiTimeline from "./components/MuiTimeline";
 import MuiMasonry from "./components/MuiMasonry";
+import MuiResponsiveness from "./components/MuiResponsiveness";
 // import MuiDateAndTimePicker from "./components/MuiDateAndTimePicker";
 // import MuiDateRangePicker from "./components/MuiDateRangePicker";
 
@@ -184,6 +185,10 @@ function App() {
       <Divider variant="middle" />
       <br />
       <MuiMasonry />
+      <br />
+      <Divider variant="middle" />
+      <br />
+      <MuiResponsiveness />
       <br />
       <Divider variant="middle" />
       <br />
