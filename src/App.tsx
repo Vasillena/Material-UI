@@ -1,5 +1,6 @@
 import "./App.css";
 import { Box, Divider } from "@mui/material";
+import { createTheme, ThemeProvider, colors } from "@mui/material";
 // import { LocalizationProvider } from "@mui/x-date-pickers";
 // import AdapterDateFns from "@mui/x-date-pickers";
 import MuiButton from "./components/MuiButton";
@@ -40,160 +41,177 @@ import MuiResponsiveness from "./components/MuiResponsiveness";
 // import MuiDateAndTimePicker from "./components/MuiDateAndTimePicker";
 // import MuiDateRangePicker from "./components/MuiDateRangePicker";
 
+const theme = createTheme({
+  status: {
+    danger: "#e53e3e",
+  },
+  palette: {
+    secondary: {
+      main: colors.orange[500],
+    },
+    neutral: {
+      main: colors.grey[500],
+      darker: colors.grey[700],
+    },
+  },
+});
+
 function App() {
   return (
-    // <LocalizationProvider dateAdapter={AdapterDateFns}>
-    <Box style={{ margin: "0 auto" }}>
-      <MuiTypography />
-      <br />
-      <Divider variant="middle" />
-      <br />
-      <MuiButton />
-      <br />
-      <Divider variant="middle" />
-      <br />
-      <MuiTextField />
-      <br />
-      <Divider variant="middle" />
-      <br />
-      <MuiSelect />
-      <br />
-      <Divider variant="middle" />
-      <br />
-      <MuiRadio />
-      <br />
-      <Divider variant="middle" />
-      <br />
-      <MuiCheckbox />
-      <br />
-      <Divider variant="middle" />
-      <br />
-      <MuiSwitch />
-      <br />
-      <Divider variant="middle" />
-      <br />
-      <MuiRating />
-      <br />
-      <Divider variant="middle" />
-      <br />
-      <MuiAutocomplete />
-      <br />
-      <Divider variant="middle" />
-      <br />
-      <MuiLayout />
-      <br />
-      <Divider variant="middle" />
-      <br />
-      <MuiCard />
-      <br />
-      <Divider variant="middle" />
-      <br />
-      <MuiAccordion />
-      <br />
-      <Divider variant="middle" />
-      <br />
-      <MuiImageList />
-      <br />
-      <Divider variant="middle" />
-      <br />
-      <MuiNavbar />
-      <br />
-      <Divider variant="middle" />
-      <br />
-      <MuiLink />
-      <br />
-      <Divider variant="middle" />
-      <br />
-      <MuiBreadcrumbs />
-      <br />
-      <Divider variant="middle" />
-      <br />
-      <MuiDrawer />
-      <br />
-      <Divider variant="middle" />
-      <br />
-      <MuiSpeedDial />
-      <br />
-      <Divider variant="middle" />
-      <br />
-      <MuiBottomNavigation />
-      <br />
-      <Divider variant="middle" />
-      <br />
-      <MuiAvatar />
-      <br />
-      <Divider variant="middle" />
-      <br />
-      <MuiBadge />
-      <br />
-      <Divider variant="middle" />
-      <br />
-      <MuiList />
-      <br />
-      <Divider variant="middle" />
-      <br />
-      <MuiChip />
-      <br />
-      <Divider variant="middle" />
-      <br />
-      <MuiTooltip />
-      <br />
-      <Divider variant="middle" />
-      <br />
-      <MuiTable />
-      <br />
-      <Divider variant="middle" />
-      <br />
-      <MuiAlert />
-      <br />
-      <Divider variant="middle" />
-      <br />
-      <MuiSnackbar />
-      <br />
-      <Divider variant="middle" />
-      <br />
-      <MuiDialog />
-      <br />
-      <Divider variant="middle" />
-      <br />
-      <MuiProgress />
-      <br />
-      <Divider variant="middle" />
-      <br />
-      <MuiSkeleton />
-      <br />
-      <Divider variant="middle" />
-      <br />
-      <MuiLoadngButton />
-      <br />
-      <Divider variant="middle" />
-      <br />
-      {/* <MuiDateAndTimePicker />
+    <ThemeProvider theme={theme}>
+      {/* <LocalizationProvider dateAdapter={AdapterDateFns}> */}
+      <Box style={{ margin: "0 auto" }}>
+        <MuiTypography />
+        <br />
+        <Divider variant="middle" />
+        <br />
+        <MuiButton />
+        <br />
+        <Divider variant="middle" />
+        <br />
+        <MuiTextField />
+        <br />
+        <Divider variant="middle" />
+        <br />
+        <MuiSelect />
+        <br />
+        <Divider variant="middle" />
+        <br />
+        <MuiRadio />
+        <br />
+        <Divider variant="middle" />
+        <br />
+        <MuiCheckbox />
+        <br />
+        <Divider variant="middle" />
+        <br />
+        <MuiSwitch />
+        <br />
+        <Divider variant="middle" />
+        <br />
+        <MuiRating />
+        <br />
+        <Divider variant="middle" />
+        <br />
+        <MuiAutocomplete />
+        <br />
+        <Divider variant="middle" />
+        <br />
+        <MuiLayout />
+        <br />
+        <Divider variant="middle" />
+        <br />
+        <MuiCard />
+        <br />
+        <Divider variant="middle" />
+        <br />
+        <MuiAccordion />
+        <br />
+        <Divider variant="middle" />
+        <br />
+        <MuiImageList />
+        <br />
+        <Divider variant="middle" />
+        <br />
+        <MuiNavbar />
+        <br />
+        <Divider variant="middle" />
+        <br />
+        <MuiLink />
+        <br />
+        <Divider variant="middle" />
+        <br />
+        <MuiBreadcrumbs />
+        <br />
+        <Divider variant="middle" />
+        <br />
+        <MuiDrawer />
+        <br />
+        <Divider variant="middle" />
+        <br />
+        <MuiSpeedDial />
+        <br />
+        <Divider variant="middle" />
+        <br />
+        <MuiBottomNavigation />
+        <br />
+        <Divider variant="middle" />
+        <br />
+        <MuiAvatar />
+        <br />
+        <Divider variant="middle" />
+        <br />
+        <MuiBadge />
+        <br />
+        <Divider variant="middle" />
+        <br />
+        <MuiList />
+        <br />
+        <Divider variant="middle" />
+        <br />
+        <MuiChip />
+        <br />
+        <Divider variant="middle" />
+        <br />
+        <MuiTooltip />
+        <br />
+        <Divider variant="middle" />
+        <br />
+        <MuiTable />
+        <br />
+        <Divider variant="middle" />
+        <br />
+        <MuiAlert />
+        <br />
+        <Divider variant="middle" />
+        <br />
+        <MuiSnackbar />
+        <br />
+        <Divider variant="middle" />
+        <br />
+        <MuiDialog />
+        <br />
+        <Divider variant="middle" />
+        <br />
+        <MuiProgress />
+        <br />
+        <Divider variant="middle" />
+        <br />
+        <MuiSkeleton />
+        <br />
+        <Divider variant="middle" />
+        <br />
+        <MuiLoadngButton />
+        <br />
+        <Divider variant="middle" />
+        <br />
+        {/* <MuiDateAndTimePicker />
         <br />
         <Divider variant="middle" />
         <br /> */}
-      {/* <MuiDateRangePicker />
+        {/* <MuiDateRangePicker />
       <br />
       <Divider variant="middle" />
       <br /> */}
-      <MuiTabs />
-      <br />
-      <Divider variant="middle" />
-      <br />
-      <MuiTimeline />
-      <br />
-      <Divider variant="middle" />
-      <br />
-      <MuiMasonry />
-      <br />
-      <Divider variant="middle" />
-      <br />
-      <MuiResponsiveness />
-      <br />
-      <Divider variant="middle" />
-      <br />
-    </Box>
-    // </LocalizationProvider>
+        <MuiTabs />
+        <br />
+        <Divider variant="middle" />
+        <br />
+        <MuiTimeline />
+        <br />
+        <Divider variant="middle" />
+        <br />
+        <MuiMasonry />
+        <br />
+        <Divider variant="middle" />
+        <br />
+        <MuiResponsiveness />
+        <br />
+        <Divider variant="middle" />
+        <br />
+      </Box>
+      // {/* </LocalizationProvider> */}
+    </ThemeProvider>
   );
 }
 
